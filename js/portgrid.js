@@ -266,7 +266,7 @@ function applyFilters(selector) {
 		})
 		.transition()
 		.duration(300)
-		.style('opacity','0.5')
+		.style('opacity','0.25')
 
 		gridselect.filter(function (d,i){
 			//console.log(d);
