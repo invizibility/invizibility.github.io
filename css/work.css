@@ -1,0 +1,176 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+div.desctitle.white{
+	font-family: 'Nunito';	
+	font-weight: 300;
+	font-size: 18px;
+	letter-spacing: 0.08em;
+	margin-bottom: 20px;
+}
+
+iframe{
+	padding-bottom: 8px;
+}
+
+.contentwrapper{
+	position: relative;
+	top: 37px;
+}
+
+.imgcolumn{
+	float: left;
+	width: 600px;
+	padding-left: 2px;
+}
+
+.imgcolumn img{
+	padding-bottom: 8px;
+}
+
+div.desccontainer{
+  	float: left;
+/*	left: 600px;*/
+/*	position: relative;*/
+  	
+  	padding-left: 15px;
+  	display: inline-block;
+  	width: 450px;
+  	/*top: 4px;*/
+
+	
+	overflow: hidden;
+
+}
+
+#desc{
+	/*width: 500px;*/
+}
+.desc{
+	width: 500px;
+
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-size: 11px;
+}
+
+div.topdesccontainer{
+	margin-top: 25px;
+
+}
+
+div.centercontainer{
+	width: 100%;
+	/*left: 5	00px;*/
+	/*margin: 0 auto;*/
+}
+
+h1{	
+   	/*font-family: 'VT323';*/
+   	font-family: 'Nunito';
+   	font-weight: 700;
+   	font-size: 48px;
+   	color: black;
+   	padding: 0px;
+   	margin-top: 5px;
+   	margin-bottom: 10px;
+   	display: inline;
+   	margin-right: 0px;
+   	
+}
+
+
+a.nametitle{
+	/*display: inline;*/
+	position: relative;
+	text-decoration: none;
+
+}
+
+
+div.attrlabel{
+	font-family: 'Open Sans';
+	font-weight: 600;
+	font-size: 13px;
+	margin-top: 5px;
+	margin-bottom: 3px;
+	/*letter-spacing: 0.05em;*/
+
+}
+
+ul.attrlist{
+	margin-top: 4px;
+	margin-bottom: 4px;
+	padding-left: 30px;
+	margin-bottom: 15px;
+}
+
+.infowrapper{
+	display: inline-block;
+	position: relative;
+	float: right;
+	padding-top: 5px;
+}
+
+ul.info{
+	float: right;	
+	font-family: 'Nunito';
+	font-weight: 400;
+	font-size: 18px;
+	color: black;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+	display: inline;
+}
+
+
+
+.attritem{
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-size: 11px;
+
+}
+
+div.imagecontainer{
+	float: left;
+	position: relative;
+}
+
+
+.imagecontainer img{
+	
+	position: absolute;
+	left: 10px;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+	opacity:0;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+}
+
+.imagecontainer img.opaque{
+	opacity:1;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=1);
+}
+
+div.selectcontainer{
+	position: absolute;
+	left: 602px;
+
+}
+
+img.selectimg{
+	display: inline;
+	margin: 5px;
+}

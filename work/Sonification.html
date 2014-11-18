@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../css/work.css"/>
+    <script src="http://d3js.org/d3.v3.min.js" defer></script>
+    <script src="../js/newworkscript.js" defer></script>
+</head>
+
+<body>
+    <a class="nametitle" href="../index.html">
+        <h1>aprameya</h1>
+    </a>
+    <br>
+  
+        <div class="contentwrapper">
+            <div class="imgcolumn">
+                
+                <img src="../images/sonification/main3_275.png"></img>
+                <img src="../images/sonification/main2_275.png"></img>
+                <iframe src="//player.vimeo.com/video/112091509" width="600" height="339" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+               
+
+            </div>
+
+        <div class="desccontainer">
+           
+            <div class="desctitle white">Hyperspectral Data Sonification</div>
+            <div class="topdesccontainer">   
+                <div class="attributes">
+                    <div class="attrlabel">Project Type:</div>
+                    <div class="attritem">ImageJ Plugin + Methods Article in Peer Reviewed Research Journal</div>                
+                    <div class="attrlabel">Tools Used:</div>
+                    <ul class="attrlist">
+                        <li class="attritem">Cycling 74 Max/MSP</li>
+                        <li class="attritem">ImageJ</li>
+                        <li class="attritem">SuperCollider</li>
+                        <li class="attritem">Java</li>
+                    </ul>
+                    <div class="attrlabel">Year:</div>
+                    <div class="attritem">2014</div>
+
+                    <div class="attrlabel">Code:</div>
+                    <div class="attritem">
+                        <a href = "https://github.com/uw-loci/sonification">https://github.com/uw-loci/sonification</a>
+                    </div>
+                    <div class="attrlabel">Paper:</div>
+                    <div class="attritem">
+                        link coming soon. manuscript can be provided upon request.
+                    </div>                     
+                    <div class="attrlabel">Project Description:</div>
+                    <div class="attritem" style="margin-bottom: 15px;">
+                        <p>
+                            This project was designed to be the capstone project of my undergraduate research study at the 
+                            <a href = "http://loci.wisc.edu/">Laboratory for Optical and Computational Imagery (LOCI)</a>. Director Kevin Eliceiri wanted me to wrap my research up with a project that really captured the essence of the custom major I designed. My study of "Information Aesthetics" was concerned with the question: how can a design process involving both aesthetic and scientific forms of creativity bridge the gap between human perception and datasets that are too complex for human consumption? During this project I gained experience composing research into a formal paper to be submitted for peer review and presentation in a scientific journal, I created a functional Java plugin for scientific image analysis suite FIJI (a distribution of ImageJ), and I applied knowledge of algorithmic music composition technologies to a scientific context to create a workflow for researchers to gain meaningful insights into hyperspectral datasets.
+                        </p>
+                        <p>
+                            My collaborator on this project, Andreas Velten, recently built a microscope that collects extremely high dimensional fluorescence microscopy datasets. This Hyperspectral Swept Field Confocal microscope is used for imaging transgenic specimens that have been modified to contain many fluorescent cellular markers, and is calibrated to optically acquire high resolution image volumes with up to 17 spectral channels. Cutting edge research in many life science fields is concerned not only with how fluorescence microscopy can elucidate structural characteristics of a sub-cellular environment, but how spectral shifts in the fluorescence data can yield subtle cues about impending cell behavior, such as stem cell differentiation. However, current data visualization methods provide no meaningful way of interacting directly with a 17-dimensional datasets. This bottleneck exists fundamentally because the human eye only has 3 color cones, and is only spectrally sensitive to a range of frequencies that is far smaller than the spectral range of a 17-D image volume. There is a huge data loss when 17 dimensions have to be transcoded down to 3, so researchers defer direct interaction with the spectral data to algorithmic image processing and principal component analysis. 
+                        </p>
+                        <p>
+                            We wanted to explore data sonification as a way to directly perceive spectrally rich datasets. The human ear is an order of magnitude more spectrally sensitive than the eye, which is why we are able to enjoy music with multiple instruments and dynamic compositional elements. By turning the dataset into an interactive soundscape, we make obvious the spectral qualities of the data that were literally invisible to previous analysis methods, and explore a new representational medium for this particular type of data. I was tasked with developing a plugin for FIJI which would allow the user to sonify a multichannel image volume by clicking and dragging a path through the image. The plugin was written in Java, and communicates with an instance of SuperCollider to convert encoded pixel data into sound. I created multiple mappings from data-space to sound-space (called synth definitions or SynthDefs) and devised a system for calibrating new SynthDefs against a reference multichannel image volume to test for spectral clarity. My sonification was tested against algorithmically generated spectral data, FocalCheck spectral separation beads, and finally a real transgenic specimen, all imaged on Andreas' new scope. The sonification was capable of articulating invisible spectral patterns in each volume. I recorded these tests and compiled them together with a thorough explanation of our method, analysis of the data, and the code for the plugin, and submitted it all as methods paper to F1000 optics. The journal is open access and the code is available publically from our Lab GitHub, as well as through the FIJI updater.   
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+
+    
+</body>
+
+
+
+
