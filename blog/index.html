@@ -45,9 +45,9 @@
   <nav class="site-navigation">
     <ul>
       
-        <li><a href="/">Home</a></li>
+        <li><a href="/">主页</a></li>
       
-        <li><a href="/archives">Archives</a></li>
+        <li><a href="/archives">归档</a></li>
       
     </ul>
   </nav>
@@ -55,6 +55,51 @@
 
     <main class="site-main posts-loop">
     
+  <article>
+
+  
+    
+    <h3 class="article-title"><a href="/blog/2016/09/29/Criteria-of-Success/"><span>Criteria of Success</span></a></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/blog/2016/09/29/Criteria-of-Success/" rel="bookmark">
+        <time class="entry-date published" datetime="2016-09-29T21:39:14.000Z">
+          2016-09-29
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+
+
   <article>
 
   
@@ -156,19 +201,19 @@
 </ul>
 <p>In this post I will tackle the first area. I’ve tried to select visualizations that I think are either effective or ineffective for notable reasons; there are a lot of bad visualizations out there so it is important to learn from ‘near misses’ instead of trying to extract meaning from something that is a complete failure. </p>
 <p><a href="https://petridishtalk.com/2012/06/30/gene-visualization/" target="_blank" rel="external">This</a> blog post by Mo Rahman, the founder of <a href="http://genedrop.com/" target="_blank" rel="external">GeneDrop</a>, provides a good overview of the most common types of visual grammar used in contemporary genomics problem solving. Going through each of the 5 categories outlined in his post, I’ve aggregated some visualization strategies I think are interesting.</p>
-<h3 id="Track-Visualization"><a href="#Track-Visualization" class="headerlink" title="Track Visualization"></a>Track Visualization</h3><p>The <a href="genome.ucsc.edu">UCSC genome browser</a> is considered the standard of this type of visualization. This project began to showcase the initial findings of the Human Genome Project, and continues to be a widely used repository for genomic alignment and annotation data for several different species.</p>
-<p><img src="/blog/images/ucsc.JPG" alt="alt"></p>
-<p>Track visualizations present sequential information in a horizontal extended track, and invite users to compare alignments between multiple sequences, or annotations (such as measurement of gene expression, or presence of a promoter region) along the distance of the sequence. This is useful for looking up the significance of a particular region on a genome, but for asking questions about complex conserved trends across species or generations, simple linear track visualization becomes complicated. The following figure shows similarity and inversion of particular regions across 11 <em>Lactobacillus</em> genomes represented as tracks, from the paper <a href="http://journal.frontiersin.org/article/10.3389/fmicb.2012.00048/full" target="_blank" rel="external">“Tracing lifestyle adaptation in prokaryotic genomes”</a>. It gets quite messy.</p>
+<h3 id="Track-Visualization"><a href="#Track-Visualization" class="headerlink" title="Track Visualization"></a>Track Visualization</h3><p>Track visualizations present sequential information in a horizontal extended track, and are primarily utilized to examine issues of alignment between multiple sequences. The genome alignment problem space ranges from analyzing small varations in sequence amongst members of a population or species, to asking questions about complex conserved trends across species or generations. Given the scale and complexity of the variety of alignment relationships potentially of interest, it can be very trickly to legibly visualize an observation or a hypothesis. The following figure shows similarity and inversion of particular regions across 11 <em>Lactobacillus</em> genomes represented as tracks, from the paper <a href="http://journal.frontiersin.org/article/10.3389/fmicb.2012.00048/full" target="_blank" rel="external">“Tracing lifestyle adaptation in prokaryotic genomes”</a>. It gets quite messy.</p>
 <p><img src="/blog/images/alignmentmess.jpg" alt="alignmentmess"></p>
 <p>As such, researchers have explored custom track visualization solutions when a linear genome representation is required. A couple interesting examples include:</p>
 <h4 id="GeneDrop-Custom-Browser"><a href="#GeneDrop-Custom-Browser" class="headerlink" title="GeneDrop Custom Browser"></a>GeneDrop Custom Browser</h4><p>This browser has been shown by Mo Rahman on Twitter and on his blog. It’s a custom in house genome browser used for informatics work at GeneDrop, and effectively shows how a well designed track visualization can frame the complexity at various levels of detail present in a multiple sequence alignment analysis. Here it is shown in a workflow for resolving structural variations in certain repetetive regions of genome sequence</p>
 <p><img src="/blog/images/GeneDropProprietaryBrowser.png" alt="GeneDrop"></p>
 <p>and again here in an interesting <a href="https://petridishtalk.com/2014/10/02/retooling-analysis-pipelines-from-human-to-ebov-ngs-data-for-rapid-alignment-and-strain-identification/" target="_blank" rel="external">post</a> about analyzing strain variations of the ebola virus</p>
 <p><img src="/blog/images/GeneDrop2.png" alt="GeneDrop2"></p>
-<h4 id="Sequence-Surveyor"><a href="#Sequence-Surveyor" class="headerlink" title="Sequence Surveyor"></a>Sequence Surveyor</h4><p>This tool was developed at the Computer Graphics departmartment at the University of Wisconsin-Madison as a scalable solution for comparing and clustering alignments. It uses gradients and cluster averaging to provide a way to compare multiple sequence alignments like in the <em>Lactobacillus</em> example, without the spiderweb of edges required to show congruence/inversion. This tool actually actually has interesting applications in text corpus analysis, but that is a discussion for a separate post.</p>
+<h4 id="Sequence-Surveyor"><a href="#Sequence-Surveyor" class="headerlink" title="Sequence Surveyor"></a>Sequence Surveyor</h4><p>This tool was developed at the Computer Graphics department at the University of Wisconsin-Madison as a scalable solution for comparing and clustering alignments. It uses gradients and cluster averaging to provide a way to compare multiple sequence alignments like in the <em>Lactobacillus</em> example, without the spiderweb of edges required to show congruence/inversion. This tool actually actually has interesting applications in text corpus analysis, but that is a discussion for a separate post.</p>
 <p><img src="/blog/images/sequencesurv.gif" alt="SeqSurv"></p>
 <h4 id="BactoGENIE"><a href="#BactoGENIE" class="headerlink" title="BactoGENIE"></a>BactoGENIE</h4><p>This project is interesting because it unifies a hardware visualization solution with a custom visual grammar. BactoGENIE was created for visualizing metagenomic datasets, which are sequencing data taken from a variety of species populating a certain local biome (water in a lake, your intestines, etc.) Figuring out similarities between all the different types of bacterial DNA in the sample yields powerful insights about the stability and the history a local biomic environment. BactoGENIE runs on a large immersive display at the Experimental Visualization Laboratory at the University of Chicago </p>
 <p><img src="/blog/images/bactogenie.jpg" alt="Bact"></p>
+<h4 id="UCSC"><a href="#UCSC" class="headerlink" title="UCSC"></a>UCSC</h4><p>The <a href="genome.ucsc.edu">UCSC genome browser</a> provides the most widely used and most accessible track visualization platform for genomic data. This project began to showcase the initial findings of the Human Genome Project, and continues to be a widely used repository for genomic alignment and annotation data for several different species. The UCSC browser actually combines data that are traditionally seen heatmaps (such as measurement of gene expression, protein binding affinity, etc) along the distance of the sequence in addition to the tracks which indicate locations of genes/promoter regions for various species. While seeing these two types of information alongside each other can be very powerful analytically, the sheer quantity of informational tracks available on UCSC makes it difficult to explore potentially interesting patterns across a sequence. As such, the UCSC browser is used primarily to look up sections of sequence that have already been identified as noteworthy. </p>
+<p><img src="/blog/images/ucsc.JPG" alt="alt"></p>
 <h3 id="Heatmap-Visualization"><a href="#Heatmap-Visualization" class="headerlink" title="Heatmap Visualization"></a>Heatmap Visualization</h3><p>Heatmap visualizations are utilized in genomics in a couple of different ways. </p>
 <h4 id="IGV"><a href="#IGV" class="headerlink" title="IGV"></a>IGV</h4><h4 id="JuiceBox"><a href="#JuiceBox" class="headerlink" title="JuiceBox"></a>JuiceBox</h4><h3 id="Circular-Visualization"><a href="#Circular-Visualization" class="headerlink" title="Circular Visualization"></a>Circular Visualization</h3><h4 id="Circos"><a href="#Circos" class="headerlink" title="Circos"></a>Circos</h4><h4 id="Anvi’o"><a href="#Anvi’o" class="headerlink" title="Anvi’o"></a>Anvi’o</h4><h3 id="Network-Visualization"><a href="#Network-Visualization" class="headerlink" title="Network Visualization"></a>Network Visualization</h3><h4 id="Cytoscape"><a href="#Cytoscape" class="headerlink" title="Cytoscape"></a>Cytoscape</h4><h4 id="Ayasdi"><a href="#Ayasdi" class="headerlink" title="Ayasdi"></a>Ayasdi</h4><h4 id="Valence"><a href="#Valence" class="headerlink" title="Valence"></a>Valence</h4><h3 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h3><h4 id="DNA-Walks"><a href="#DNA-Walks" class="headerlink" title="DNA Walks"></a>DNA Walks</h4><h4 id="Phinch"><a href="#Phinch" class="headerlink" title="Phinch"></a>Phinch</h4>
       
