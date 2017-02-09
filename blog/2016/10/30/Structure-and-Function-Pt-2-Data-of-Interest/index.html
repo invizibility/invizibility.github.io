@@ -10,6 +10,8 @@
   
 
   
+  <meta name="description" content="After identifying the nexus of structural genomic data and functional genomic data as the problem space for which a visualization would ideally provid">
+  
 
   
   
@@ -81,7 +83,22 @@
   <div class="article-content">
     <div class="entry">
       
-        
+        <p>After identifying the nexus of structural genomic data and functional genomic data as the problem space for which a visualization would ideally provide organization of knowledge, we had to pick some collection of datasets to impose our organizational regime. One of the first internet resources Noah pointed me to when explaining the problem of matching datasets was Cistrome dataset browser, which is a website that aggregates many types of next generation sequencing experiments on a variety of biological sources. Here’s a screenshot of Cistrome:</p>
+
+<p>Noah showed me this dataset browser to give me an example of an organizational paradigm that was designed for targeted specific querying rather than exploratory querying. In the Cistrome broswer, the user has two options to narrow down the dataset library to find interesting groups of structural and functional data: select one of several hundred arcane propietary cell-line serial numbers, or from a list of ‘factors’ which identify binding sites of ChIP-seq experiments. While the cell-line serial and the ChIP binding factor are definitely identifying characteristics of an experiment, these characteristics are of little utility to a user who is perusing the library looking for interesting connections between datasets, without prior knowledge of how a given ChIP target or cell-line might be implicated in the context of a larger scientific hypothesis. </p>
+<p>In the last post, I wrote about how Noah mentioned this library would be substantially more useful if it was organized in a biologically meaningful way, which provided heuristics for a user to narrow down these cell types and factors of interest. Evaluating Noah’s criticism of this particular interface drew my attention to the taxonomic aspect of this visualization challenge: how could visualization be leveraged to organize attributes like “source” and “factor” into useful mental models? Furthermore, how could these mental models allow for a navigation of structure/function data libraries in a way that facilitates hypothesis generation?</p>
+<p>The next interface we explored was ENCODE. The level of organization is substantially superior to that of Cistrome. There are multiple filter types and organizational parameters that a user can leverage to find groups of experiments that are relevant to hypotheses involving heterogeneous genomic data types. Here is a screenshot of the ENCODE ‘experiment matrix’, which provides an overview of all the filtering parameters available to a user who might not know initially which specific experiment they are interested in:</p>
+
+<p>This level of organization is great, but its emphasis on hosting data types for all types of genomics workflows makes it tricky to use for structure-function specific explorations of the data space. For starters, conformation experiments have only been done on around a dozen cell types–this experiment matrix shows so many cell types for which no conformation exists at all. Additionally, since there are so many different experiment types, there aren’t any filtering parameters that allow the user to sort through CHiP-seq experiments *. ENCODE’s lack of granularity in the CHiP binding target field unfortunately makes the 1000’s of CHiP experimments available for relevant cell lines as difficult to browse as the CHiP experiments in Cistrome.</p>
+<p>Working with Noah to identify why these currenly existing resources are cumbersome clarified for me the type of data ontology an ideal experiment library interface would support. Just by looking at these two website we were able to identify some crucial desired characteristics:</p>
+<ul>
+<li>biologically meaningful organization paradigm</li>
+<li>support for organizing CHiP experiments</li>
+<li>curated data showing experiments only for cell types that have an existing conformation capture</li>
+<li>support for exploratory querying rather than specific querying</li>
+</ul>
+<p>From this list of characterstics, I worked to develop a mental model that would inform our new organizational paradigm. The next post will document this development.</p>
+
       
     </div>
 
@@ -112,7 +129,7 @@
     Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
     </br>
     
-    &copy; 2016 John Doe
+    &copy; 2017 John Doe
     
   </p>
 </footer>
