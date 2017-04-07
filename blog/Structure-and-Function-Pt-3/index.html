@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Structure and Function Pt. 3: Building a Data Ontology • Aprameya Mysore</title>
+    <meta name="description" content="Once we did a bit of work establishing the blind spots of current data repositories hosting structure and function data, we worked to crystallize the principles that would inform our newly developed organizational paradigm for storing, browsing, and visualizing collections of structure and function data.
+These principles were inspired both by the desire to go beyond currently available organzitional schema, as well as the desire to constrain our problem into a manageable enough scope to make the development of a prototype interface viable.
+
+">
+    <meta name="keywords" content="thesis">
+    
+    	<!-- Twitter Cards -->
+	<meta name="twitter:title" content="Structure and Function Pt. 3: Building a Data Ontology">
+	<meta name="twitter:description" content="Once we did a bit of work establishing the blind spots of current data repositories hosting structure and function data, we worked to crystallize the principles that would inform our newly developed organizational paradigm for storing, browsing, and visualizing collections of structure and function data.
+These principles were inspired both by the desire to go beyond currently available organzitional schema, as well as the desire to constrain our problem into a manageable enough scope to make the development of a prototype interface viable.
+
+">
+	<meta name="twitter:site" content="@invizibility">
+	<meta name="twitter:creator" content="@invizibility">
+	
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:image" content="http://localhost:4000/images/">
+	
+	<!-- Open Graph -->
+	<meta property="og:locale" content="en">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Structure and Function Pt. 3: Building a Data Ontology">
+	<meta property="og:description" content="Once we did a bit of work establishing the blind spots of current data repositories hosting structure and function data, we worked to crystallize the principles that would inform our newly developed organizational paradigm for storing, browsing, and visualizing collections of structure and function data.
+These principles were inspired both by the desire to go beyond currently available organzitional schema, as well as the desire to constrain our problem into a manageable enough scope to make the development of a prototype interface viable.
+
+">
+	<meta property="og:url" content="http://localhost:4000/blog/Structure-and-Function-Pt-3/">
+	<meta property="og:site_name" content="Aprameya Mysore">
+
+    <link rel="canonical" href="http://localhost:4000/blog/Structure-and-Function-Pt-3/">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <link href="http://localhost:4000/atom.xml" type="application/atom+xml" rel="alternate" title="Aprameya Mysore Atom Feed">
+    <link href="http://localhost:4000/sitemap.xml" type="application/xml" rel="sitemap" title="Sitemap">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cleartype" content="on">
+
+    <link rel="stylesheet" href="http://localhost:4000/css/main.css">
+    <!-- HTML5 Shiv and Media Query Support for IE -->
+    <!--[if lt IE 9]>
+      <script src="http://localhost:4000/js/vendor/html5shiv.min.js"></script>
+      <script src="http://localhost:4000/js/vendor/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body id="js-body">
+    <!--[if lt IE 9]><div class="upgrade notice-warning"><strong>Your browser is quite old!</strong> Why not <a href="http://whatbrowser.org/">upgrade to a newer one</a> to better enjoy this site?</div><![endif]-->
+
+    <header id="masthead">
+  <div class="inner-wrap">
+    <a href="http://localhost:4000/" class="site-title">Aprameya Mysore</a>
+    <nav role="navigation" class="menu top-menu">
+        <ul class="menu-item">
+	<li class="home"><a href="/">Aprameya Mysore</a></li>
+	
+
+		
+		
+			<li><a href="http://localhost:4000" ></a></li>
+		
+		
+
+	
+
+		
+		
+			<li><a href="http://localhost:4000/contact/" >@</a></li>
+		
+		
+
+	
+
+		
+		
+			<li><a href="http://localhost:4000/blog/" >blog</a></li>
+		
+		
+
+	
+
+		
+		
+			<li><a href="http://localhost:4000/cv/" >cv</a></li>
+		
+		
+
+	
+
+		
+		
+			<li 
+				
+					><a href="http://localhost:4000#content" >work</a>
+					                                                                                    				
+			</li>
+			
+		
+
+		
+</ul>
+    </nav>
+  </div><!-- /.inner-wrap -->
+</header><!-- /.masthead -->
+    <!--<nav role="navigation" id="js-menu" class="sliding-menu-content">
+  <h5>Aprameya Mysore <span>Table of Contents</span></h5>
+  <ul class="menu-item">
+    <li>
+      <a href="http://localhost:4000">
+        
+        <div class="title"></div>
+        
+      </a>
+    </li><li>
+      <a href="http://localhost:4000/contact/">
+        
+        <div class="title">@</div>
+        
+      </a>
+    </li><li>
+      <a href="http://localhost:4000/blog/">
+        
+        <div class="title">blog</div>
+        
+      </a>
+    </li><li>
+      <a href="http://localhost:4000/cv/">
+        
+        <div class="title">cv</div>
+        
+      </a>
+    </li><li>
+      <a href="http://localhost:4000">
+        
+        <div class="title">work</div>
+        
+      </a>
+    </li>
+  </ul>
+</nav>
+<button type="button" id="js-menu-trigger" class="sliding-menu-button lines-button x2" role="button" aria-label="Toggle Navigation">
+  <span class="nav-lines"></span>
+</button>
+
+<div id="js-menu-screen" class="menu-screen"></div>
+-->
+
+    <div id="page-wrapper">
+      <div id="main" role="main">
+	<article class="wrap" itemscope itemtype="http://schema.org/Article">
+		
+		
+  <nav class="breadcrumbs">
+    <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+      <a href="http://localhost:4000" itemprop="url">
+        <span itemprop="title">Home</span>
+      </a> › 
+    <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+      <a href="http://localhost:4000/blog/" itemprop="url">
+        <span itemprop="title">Blog</span>
+      </a>
+    </span>
+  </nav><!-- /.breadcrumbs -->
+
+		<div class="page-title">
+			<h1>Structure and Function Pt. 3: Building a Data Ontology</h1>
+		</div>
+		<div class="inner-wrap">
+			<div id="content" class="page-content" itemprop="articleBody">
+				<p>Once we did a bit of work establishing the blind spots of current data repositories hosting structure and function data, we worked to crystallize the principles that would inform our newly developed organizational paradigm for storing, browsing, and visualizing collections of structure and function data.
+These principles were inspired both by the desire to go beyond currently available organzitional schema, as well as the desire to constrain our problem into a manageable enough scope to make the development of a prototype interface viable.</p>
+
+<h2 id="visual-brainstorming">Visual Brainstorming</h2>
+
+<p>As I did research about CHiP-seq, conformation capture, and the various range of cell types that might populate our prototypical library, I kept a journal where I kept note of potentially useful organizational heuristics and sketched out my mental model of data ontology. Gradually pulling a visual schema out of this organizational thinking exercise connects to some of the higher level goals of this project for me, namely using visualization to traverse high dimensional data-spaces. Here are some of my initial notes:</p>
+
+<p><img src="/images/blog/2016-12-20-Structure-and-Function-Pt-3/sketch_1.JPG" alt="sketch 1" /></p>
+
+<p>And here are more notes. I specifically tinkered with how to create a visual model describing how structure data-space and function data space might interact with one another, and how the varying layers of complexity on each side might affect those interactions. Using this nested two-panel format to describe the data space and the challenges of navigating it ended up being a great tool for communicating with Noah about the mental models used to formulate structure-function hypotheses.</p>
+
+<p><img src="/images/blog/2016-12-20-Structure-and-Function-Pt-3/sketch_2_edit.png" alt="sketch 2" /></p>
+
+<p>One crucial developmental point was coming to the conclusion that we needed ways to organize experiments both by what we know about them (e.g. attributes like phenotype, method, quality, date) as well as by direct computational comparison of experimental data which might capture similarity we <strong>don’t</strong> know about. It turns out many CHiP-seq experiments are done to capture binding affinities of proteins which have completely unknown function. If there is a protein with known function, and it has a similar binding pattern as a protein of unknown function, this a meaningful relationship we’d like to know about! Is there a way to make obvious such connections through a visual paradigm?</p>
+
+<h3 id="organizing--curating-structure-data">Organizing + Curating Structure Data</h3>
+
+<p>I tried to pin down actual quantitative measures of complexity that we would be dealing with when creating an interface to accomodate this ontology. One key constraint we decided on at this stage was to narrow our cell lines of interest to the 7 lines outlined in <a href="http://www.cell.com/fulltext/S0092-8674(14)01497-4">Rao et. al 2014</a>, which is one of the most cited conformation capture experiments. The 7 cell lines for which Rao et. al 2014 has structural data are lines that have a plethora of functional experiments available (namely CHiP-seq), and furthermore the actual conformation capture done in this publication is regarded to be of very high quality. These data will be the inputs for researchers like Noah who experiment with various computational geometry techniques to generate polymer models of DNA, which constitute the actual structure files.</p>
+
+<p><img src="/images/blog/2016-12-20-Structure-and-Function-Pt-3/struct_ontology.png" alt="struct_ontology" /></p>
+
+<p>Techniques of generating 3 dimensional genomic structures from pairwise HI-C data and / or specific functional experiments have not converged at a consensus “best practice”. As such, there is a need to create a flexible organization scheme accounting for the fact that the majority of 3D structures are acquired directly from researchers experimenting with computational geometry rendering algorithms. Some algorithms render a single structure from a single Hi-C pairwise matrix; others render a population of structures using statistical methods across multiple Hi-C and functional reads. While each algorithm might be optimized for a specific use case by the researcher who designed it, no single algorithm can characteristize the provenance of 3 dimensional structure data in general. This is a stark contrast from the functional data, which we acquire from ENCODE after it has been standardized and quality controlled to a particular format. The biggest issue we see immediately on the structure side from a design perspective is to create a legible hierarchy that can grow and adapt as the techniques for rendering 3d structures become more nuanced and complete. This adaptability will allow structures generated from new algorithms to fit within our larger framework of ‘biologically meaningful’ structure-function matching.</p>
+
+<p>Our structural hierarchy should look something like this quantitatively:</p>
+
+<p><img src="/images/blog/2016-12-20-Structure-and-Function-Pt-3/struct_numbers.png" alt="struct_numbers" /></p>
+
+<h3 id="organizing--curating-function-data">Organizing + Curating Function Data</h3>
+
+<p>Because we are interested in structure-function matches, we applied the same 7 cell line constraint from the Rao et. al 2014 paper that we used on the function side. In terms of experiment type, we are initially only going to look at organizational methods for CHiP-seq, since that seems to be the type with the largest amount of variety for our 7 cell lines. The most fine grained data type on the function side is the peak file, which is basically a histogram describing a variable quantity across the length of a genome. On ENCODE, it turns out just about every CHiP-seq experiment has multiple peak files, most of which are ‘replicates’ which ensure the reads are repeatable for a given experiment. While there are some time-dimensional experiments for which multiple peak files are an interesting level of data variety, we are going to constrain ourselves to 1 peak file per experiment to manage our complexity. Same as the CHiP-seq experiment type constraint, once we build the architecture to organize this, we might be able to expand it to accomodate more.</p>
+
+<p><img src="/images/blog/2016-12-20-Structure-and-Function-Pt-3/func_ontology.png" alt="func_ontology" /></p>
+
+<p>While there is more of an organizational pretext</p>
+
+<p><img src="/images/blog/2016-12-20-Structure-and-Function-Pt-3/func_numbers.png" alt="func_numbers" /></p>
+
+<h2 id="unifying-data-spaces">Unifying Data Spaces</h2>
+
+<p>Bringing these two panels together as seen in the earlier notes helps us to illustrate the more nuanced conceptual problems of traversing current data repositories to observe interesting structure function relationships.</p>
+
+<p><img src="/images/blog/2016-12-20-Structure-and-Function-Pt-3/struct_func.png" alt="struct_func" /></p>
+
+<p>Noah referred earlier to an ideal interface being able to expose biologically meaningful matches between structure and function. Our visual model gives an idea of what types of complexity need to be wrangled in order to allow these matches. To continue our brainstorming we situated some of the challenges and complexities on the two panel model itself.</p>
+
+<p><img src="/images/blog/2016-12-20-Structure-and-Function-Pt-3/struct_func_issues.png" alt="issues" /></p>
+
+<p>This framework for thinking about potential relationships between structure and function data allowed us to begin our iterative design process. At the heart of these issues was our actionable design question: what is the optimal way to pair a structure experiment and function experiment in an experiment browser that maximally facilitates exploration of the data space? The above issues constitute concrete obstacles to this exploration that we’d like to design around, and can largely be grouped into issues of data size, data heterogeneity, or clarity of metadata relationships. From here the next step was for me to dive into feature ideation to see what types of visualization methods we could leverage to get around these specific obstacles.</p>
+
+				<hr />
+				<footer class="page-footer">
+					
+
+<div class="author-image">
+	<img src="http://localhost:4000/images/" alt="">
+</div><!-- ./author-image -->
+<div class="author-content">
+	<h3 class="author-name" >Written by <span itemprop="author"></span></h3>
+	<p class="author-bio"></p>
+</div><!-- ./author-content -->
+					<div class="inline-btn">
+	<a class="btn-social twitter" href="https://twitter.com/intent/tweet?text=Structure%20and%20Function%20Pt.%203:%20Building%20a%20Data%20Ontology&amp;url=http://localhost:4000/blog/Structure-and-Function-Pt-3/&amp;via=invizibility" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Share on Twitter</a>
+	<a class="btn-social facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/blog/Structure-and-Function-Pt-3/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> Share on Facebook</a>
+	<a class="btn-social google-plus"  href="https://plus.google.com/share?url=http://localhost:4000/blog/Structure-and-Function-Pt-3/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i> Share on Google+</a>
+</div><!-- /.share-this -->
+
+					<div class="page-meta">
+	<p>Updated <time datetime="2016-12-20T00:00:00Z" itemprop="datePublished">December 20, 2016</time></p>
+</div><!-- /.page-meta -->
+				</footer><!-- /.footer -->
+				<aside>
+					
+				</aside>
+			</div><!-- /.content -->
+		</div><!-- /.inner-wrap -->
+		
+	</article><!-- ./wrap -->
+</div><!-- /#main -->
+
+      <footer role="contentinfo" id="site-footer">
+	<nav role="navigation" class="menu bottom-menu">
+		<ul class="menu-item">
+		
+      
+			<li><a href="http://localhost:4000" ></a></li>
+		
+		</ul>
+	</nav><!-- /.bottom-menu -->
+	<p class="copyright">&#169; 2017 <a href="http://localhost:4000">Aprameya Mysore</a> powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> + <a href="http://mmistakes.github.io/skinny-bones-jekyll/" rel="nofollow">Skinny Bones</a>.</p>
+</footer>
+    </div>
+
+    <script src="http://localhost:4000/js/vendor/jquery-1.9.1.min.js"></script>
+    <script src="http://localhost:4000/js/vendor/picturefill.js"></script>
+    <script src="http://localhost:4000/js/main.js"></script>
+    
+  </body>
+
+</html>
